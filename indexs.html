@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimisa Mahato | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Inline style adjustment to easily change your image pixels -->
+    <style>
+        .portfolio-img {
+            width: 170px;   /* Adjust your width pixels here */
+            height: 300px;  /* Adjust your height pixels here */
+            object-fit: cover; 
+            border-radius: 1px;
+            box-shadow: 0 8px 16px rgba(157, 132, 183, 0.15);
+            transition: transform 0.3s ease;
+            background-color: var(--lavender-light); /* Fallback color while loading */
+        }
+        .portfolio-img:hover {
+            transform: scale(1.03);
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Nimisa.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn-toggle">✨ Mood</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="tagline">Computer Engineering Student</span>
+            <h1>Hi, I'm <span class="highlight">Nimisa Mahato</span></h1>
+            <p>A passionate Class 11 student blending academic excellence with software development. Building the future one line of code at a time.</p>
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I started my computer engineering journey in Class 9,diving straight into foundational tech subjects like Web Page Design and Development (WPDS). I enjoy solving problems through programming and consistently push myself to maintain top-tier academic performance.</p>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="section alt-bg">
+        <h2>Highlights & Projects</h2>
+        <p>A visual glimpse into my academic projects and engineering journey of grade 9&10.</p>
+        
+        <div class="image-container">
+            <!-- IMAGE 1: Local project image link -->
+            <img src="C:\Users\ACER\Downloads\pic1.jpg" 
+                 alt="Nimisa's Project Photo 1" 
+                 class="portfolio-img">
+                 
+                 
+            <!-- IMAGE 2: Local project image link -->
+            <img src="C:\Users\ACER\Downloads\pic2.jpg" 
+                 alt="Nimisa's Project Photo 2" 
+                 class="portfolio-img">
+                
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Academic Excellence</h2>
+        <div class="timeline">
+            <div class="card">
+                <h3>Grade 8</h3>
+                <p class="gpa">GPA: 3.87</p>
+                <p> Recently passed my Grade 8 exams with distinction, showcasing my dedication to academic excellence.</p>
+            </div>
+            <div class="card">
+                <h3>Grade 9</h3>
+                <p class="gpa">GPA: 3.90</p>
+                <p>totally focused and determined towards engineering.honors, focusing heavily on logical problem-solving.</p>
+            </div>
+            <div class="card">
+                <h3>Grade 10</h3>
+                <p class="gpa">GPA: 3.82</p>
+                <p>completed secondary education with nice academic marks with skills & learning core principles of software and WPDS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+        <h2>Technical Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <p>Python, C, C++</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript (JS)</p>
+            </div>
+            <div class="skill-card">
+                <h3>Core Focus</h3>
+                <p>Computer Engineering, Algorithm Foundations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Let's Connect</h2>
+        <p>Always looking to collaborate on interesting student projects or engineering initiatives.</p>
+        <div class="contact-info">
+            <p>📧 Email: <a href="https://www.nimisaofficial@gmail.com" target="_blank">nimisaofficial@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nimisa Mahato. Built with passion & lavender vibes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
